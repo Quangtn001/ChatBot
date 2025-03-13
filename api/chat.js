@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   }
 
   const baseUrl = 'https://api.llm.ai.vn/v1';
-  const apiKey = process.env.VITE_OPENAI_API_KEY;
+  const apiKey = process.env.OPENAI_API_KEY;
   
   if (!apiKey) {
     return res.status(500).json({ message: 'API key not configured' });

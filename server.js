@@ -16,7 +16,7 @@ app.post('/api/chat', async (req, res) => {
   }
 
   const baseUrl = 'https://api.llm.ai.vn/v1';
-  const apiKey = process.env.VITE_OPENAI_API_KEY;
+  const apiKey = process.env.OPENAI_API_KEY;
  
   try {
     const { message, messages = [] } = req.body;
